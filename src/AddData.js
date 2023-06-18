@@ -9,7 +9,7 @@ const AddData = () => {
 
     // function to add data to the firebase realtime db
     const dataAddOn = () => {
-        set(ref(db, 'posts/' + title), {
+        set(ref(db, 'records/' + title), {
             title: title,
             body: body,
         }).then(r => {
